@@ -1,0 +1,61 @@
+ body{
+      background-color: rgb(25, 25, 25);
+      color: white;
+      font-family: Arial;
+      margin-left: 35.5%;
+      margin-right: auto;
+      margin-top: 60px;
+    }
+    .title{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .move-icon{
+      height: 50px;
+    }
+    .attack{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .move-button{
+      background-color: transparent;
+      border: 3px dashed white;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+     .reset-button-icon,
+     .auto-button-icon{
+      font-weight: bold;
+      color: black;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+     }
+     .reset-button-icon:hover,
+     .auto-button-icon:hover{
+      opacity: 50%;
+     }
+     .result-icon{
+      font-size: 20px;
+      font-weight: bold;
+     }
+     .score{
+      margin-top: 40px;
+      font-weight: bolder;
+     }
+     .label{
+      color: rgb(240, 240, 240);
+      margin-top: 30px;
+      position:absolute;
+     }
+     .keyShortcut{
+      color: grey;
+      font-size: 13px;
+      margin-top: 50px;
+     }
