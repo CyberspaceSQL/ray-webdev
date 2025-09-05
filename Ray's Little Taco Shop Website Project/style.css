@@ -1,0 +1,269 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+        background: papayawhip;
+        color: rgba(0, 0, 0, 0.877); 
+        font-family: 'Poppins', sans-serif; 
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); 
+        
+    }
+    
+
+h1 {
+    font-size: 3rem;
+    font-family: cursive;
+    text-align: center;
+    color: #D4AF37;
+}
+
+img {
+    border-radius: 53px;
+}
+
+figure :hover {
+    transform: scale(1.08); 
+ 
+}
+
+.hours img {
+    border-radius: 2rem;
+    transform: none;
+}
+
+.hours figcaption{
+    transform: none;
+}
+
+figcaption{
+    margin-top: 20px;
+    margin-left: 500px;
+    font-family: cursive;
+    font-size: xx-large;
+    transform: none!important;
+    flex-wrap: wrap-reverse;
+}
+
+.working-hours{
+    background: rgba(0, 0, 0, 0.836);
+    font-family: cursive;
+    font-size: xx-large;
+    border-radius: 2rem;
+    color: #D4AF37;
+    padding: 1rem;
+    margin-left: 50%;
+    margin-bottom: 0px;
+    text-align: center;
+    transform: none;
+}
+
+.hours-ref a{
+    padding: 1rem;
+    color: black;
+    border-radius: 4rem;
+    text-decoration: none;
+    background-color: #D4AF37!important;
+}
+
+.index-ref a{
+    padding: 1rem;
+    color: black;
+    border-radius: 4rem;
+    text-decoration: none;
+    background-color: #D4AF37!important;
+
+}
+
+.info-RLTS{
+    font-family: cursive;
+    font-weight: 800;
+    font-size:x-large;
+}
+
+nav {
+    margin-top: 100px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+nav li {
+    flex-grow: 1; 
+    text-align: center;
+    background-color: papayawhip;
+    padding: 15px 0;
+    border-radius: 19px;
+    margin: 5px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: cursive;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+
+nav li:hover {
+    background: #D4AF37;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #222;
+    color: white; 
+    border-radius: 2rem;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; 
+    font-family: cursive;
+}
+
+th {
+    background-color: #D4AF37;
+    color: black; 
+    font-weight: bold;
+}
+
+caption{
+    background: #222;
+    font-size: xx-large;
+    font-family: cursive;
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+tr:hover {
+    background-color: #444;
+    transition: 0.5s;
+
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    min-width: 600px; 
+    margin: auto;
+}
+
+table {
+    border-radius:2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.address{
+    font-family: cursive;
+    font-style: italic;
+}
+
+.phone{
+   
+    display: flex;
+   
+}
+
+.phone a{
+    text-decoration: none;
+    color: black; 
+    flex-grow: 0.3;
+    font-family: serif;
+}
+
+.phone a:hover{
+    opacity: 50%;
+}
+
+.contact-label{
+    margin-left: 540px;
+    background:#D4AF37;
+    color: black;
+    padding: 1em;
+    border-radius: 2em;
+    margin-right: 40%;
+    text-align: center;
+    margin-bottom: -30px;
+    font-family: cursive;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #1E1E1E; 
+    border-radius: 10px;
+    
+    color: papayawhip;
+}
+
+
+.form-container input,
+.form-container textarea {
+    width: 450px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 2.5em;
+    background: #2C2C2C;
+    color: #D4AF37;
+    font-size: 16px;
+    font-family: cursive;
+    transition: 0.3s;
+}
+
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #D4AF37;
+    outline: none;
+    color: antiquehite;
+    background: #333;
+}
+
+
+.form-container button {
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    padding: 12px;
+    margin-left: 100px;
+    background:#D4AF37 ; 
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    font-family: cursive;
+    transition: 0.3s;
+}
+
+
+.form-container button:hover {
+    transform: scale(1.05);
+}
