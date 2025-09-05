@@ -3,7 +3,7 @@ A collection of my web development projects built with HTML, CSS, JavaScript, Re
 
 # Web Development Projects  
 
-Welcome to **DevSpace** 🎨 — my personal repository for all **web development projects**.  
+Welcome to **Ray-webDev**  — my personal repository for all **web development projects**.  
 Here you'll find a collection of projects built with **HTML, CSS, JavaScript, React, and other modern frameworks**.
 
 ---
@@ -40,7 +40,7 @@ Here you'll find a collection of projects built with **HTML, CSS, JavaScript, Re
 ## 📫 Connect With Me  
 
 - **GitHub:** [CyberspaceSQL](https://github.com/CyberspaceSQL)
-- **LinkedIn:** [Raymond Abimbola](www.linkedin.com/in/raymond-abimbola-abb785320)
+- **LinkedIn:** [Raymond Abimbola](https://www.linkedin.com/in/raymond-abimbola-abb785320/)
 - **Portfolio:** Coming Soon 🚀
 
 ---
