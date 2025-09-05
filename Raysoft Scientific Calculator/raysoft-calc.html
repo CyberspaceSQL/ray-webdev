@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Raysoft Scientifical Calculator</title>
+  <link rel="stylesheet" href="raysoft-calc.css">
+  <script>window.MathJax = {
+    tex: {
+      inlineMath: [['{', '}'], ['\\(', '\\)']]
+    },
+    svg: { fontCache: 'global' }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="calc-container">
+    <!-- Brand Label -->
+    <div id="calc-label">
+      <p class="brand-label">RAYSOFT</p>
+      <p class="series-label">fx-991EX</p>
+    </div>
+    <button class="theme-btn">🌙</button>
+
+    <!-- Screen -->
+    <div id="diplay-container" class="input-box">
+      <div class="eqn-display"></div>
+      <div class="ans-display"></div>
+    </div>
+
+    <!-- Scientific Keys -->
+    <div id="sci-keys">
+      <button class="sci-keys-btn" data-value="CALC">\(CALC\)</button>
+      <button class="sci-keys-btn" data-value="inv">\(x^{-1}\)</button>
+      <button class="sci-keys-btn" data-value="log(">\(\log\)</button>
+      <button class="sci-keys-btn" data-value="pie">\(\pi\)</button>
+      <button class="sci-keys-btn" data-value="x/y">\( \frac{x}{y} \)</button>
+      <button class="sci-keys-btn" data-value="cube-root">\( \sqrt[3]{x} \)</button>
+      <button class="sci-keys-btn" data-value="x**2">\(x^{2}\)</button>
+      <button class="sci-keys-btn" data-value="sin(">\(\sin\)</button>
+      <button class="sci-keys-btn" data-value="cos(">\(\cos\)</button>
+      <button class="sci-keys-btn" data-value="tan(">\(\tan\)</button>
+      <button class="sci-keys-btn" data-value="sin-inv">\(\sin^{-1}\)</button>
+      <button class="sci-keys-btn" data-value="cos-inv">\( \cos^{-1} \)</button>
+      <button class="sci-keys-btn" data-value="tan-inv">\( \tan^{-1} \)</button>
+      <button class="sci-keys-btn" data-value="ln(">\( \ln \)</button>
+      <button class="sci-keys-btn" data-value="(">\((\)</button>
+      <button class="sci-keys-btn" data-value=")">\()\)</button>
+    </div>
+
+    <!-- Numbers & Ops -->
+    <div id="num-ops-keys">
+      <button class="calc-btn" data-value="7">\(7\)</button>
+      <button class="calc-btn" data-value="8">\(8\)</button>
+      <button class="calc-btn" data-value="9">\(9\)</button>
+      <button class="ops-keys calc-btn" data-value="DEL">\(DEL\)</button>
+      <button class="ops-keys calc-btn" data-value="AC">\(AC\)</button>
+
+      <button class="calc-btn" data-value="4">\(4\)</button>
+      <button class="calc-btn" data-value="5">\(5\)</button>
+      <button class="calc-btn" data-value="6">\(6\)</button>
+      <button class="ops-keys calc-btn" data-value="*">\(\times\)</button>
+      <button class="ops-keys calc-btn" data-value="/">\(\div\)</button>
+
+      <button class="calc-btn" data-value="1">\(1\)</button>
+      <button class="calc-btn" data-value="2">\(2\)</button>
+      <button class="calc-btn" data-value="3">\(3\)</button>
+      <button class="ops-keys calc-btn" data-value="+">\(+\)</button>
+      <button class="ops-keys calc-btn" data-value="-">\(-\)</button>
+
+      <button class="calc-btn" data-value="0">\(0\)</button>
+      <button class="calc-btn" data-value=".">\(.\)</button>
+      <button class="calc-btn" data-value="x10^x">\(\times 10^{x}\)</button>
+      <button class="calc-btn" data-value="Ans">\(Ans\)</button>
+      <button class="ops-keys calc-btn" data-value="=">\(=\)</button>
+    </div>
+  </div>
+  <script>
+    const themeBtn = document.querySelector('.theme-btn')
+    
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode')
+
+      if(document.body.classList.contains('light-mode')) {
+        themeBtn.textContent = '☀️';
+      } else {
+        themeBtn.textContent = '🌙'
+      }
+    });
+  </script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

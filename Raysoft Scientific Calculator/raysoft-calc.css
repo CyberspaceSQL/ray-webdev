@@ -1,0 +1,211 @@
+body{
+  background-color: hsl(0, 0%, 3%);
+  color: silver;
+}
+
+#calc-container{
+  background-color:  hsl(0, 0%, 5%);
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+
+
+.input-box {
+  width: 100%;
+  height: 80px; 
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.eqn-display {
+  font-size: 20px;
+  color: yellowgreen;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.eqn-display::-webkit-scrollbar {
+  display: none;
+}
+
+.ans-display {
+  font-size: 25px;
+  color: yellowgreen;
+  text-align: right;
+}
+
+
+#sci-keys{
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#num-ops-keys{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+}
+
+button{
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: hsl(0, 0%, 15%);
+}
+
+button:active{
+  background-color: hsl(0, 0%, 20%);
+}
+
+.sci-keys-btn{
+  background-color: rgb(41, 41, 41);
+  color: hsl(0, 0%, 100%);
+}
+
+.sci-keys-btn:hover{
+  background-color: hsl(0, 0%, 25%);
+}
+
+.sci-keys-btn:active{
+  background-color: hsl(0, 0%, 35%);
+}
+
+.ops-keys{
+  background-color: rgb(255, 76, 11);
+  color: hsl(0, 0%, 100%);
+}
+
+.ops-keys:hover{
+  background-color: rgb(255, 100, 43);
+}
+
+.ops-keys:active{
+  background-color: rgb(250, 120, 72);
+}
+
+.series-label {
+  font-family: 'Raleway', sans-serif;
+  font-style: bold;
+  font-weight: 50;
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0;
+}
+
+.brand-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;         
+  font-size: 1.1rem;
+  letter-spacing: 2px;       
+  color: #888;  
+  margin-bottom: 0.2rem;             
+}
+
+.theme-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 50px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: #555;
+}
+
+/* Light mode */
+
+body.light-mode{
+  background-color: white;
+}
+
+
+body.light-mode #calc-container{
+  background-color: hsl(0, 0%, 94%);
+}
+
+body.light-mode button{
+   background: #f5f5f5;   
+  color: #111;           
+  border: 1px solid #ddd;
+}
+
+body.light-mode button:hover{
+  background-color: hsl(0, 0%, 90%);
+}
+
+body.light-mode button:active{
+  background-color: hsl(0, 0%, 95%);
+}
+
+body.light-mode .sci-keys-btn{
+  background-color: rgb(41, 41, 41);
+  color: hsl(0, 0%, 100%);
+}
+
+body.light-mode .sci-keys-btn:hover{
+  background-color: hsl(0, 0%, 25%);
+}
+
+body.light-mode .sci-keys-btn:active{
+  background-color: hsl(0, 0%, 35%);
+}
+
+body.light-mode .ops-keys{
+  background-color: rgb(255, 76, 11);
+  color: hsl(0, 0%, 100%);
+}
+
+body.light-mode .ops-keys:hover{
+  background-color: rgb(255, 100, 43);
+}
+
+body.light-mode .ops-keys:active{
+  background-color: rgb(250, 120, 72);
+}
+
+body.light-mode .series-label{
+  color: #444444;
+}
+
+body.light-mode .brand-label{
+  color: #222222;
+}
+
+body.light-mode .input-box{
+   background:hsl(0, 0%, 50%);
+   border-radius: 6px;
+}
+
+body.light-mode .eqn-display{
+  color: black;
+}
+
+body.light-mode .ans-display{
+  color: black;
+}
