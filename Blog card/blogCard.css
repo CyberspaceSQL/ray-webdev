@@ -1,0 +1,95 @@
+body{
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card-body{
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  width: 400px;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 16px;
+  box-shadow: 8px 8px black;
+  border: 1.6px solid black;
+  box-sizing: border-box;
+}
+
+.article-pic{
+  border-radius: 16px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.article-pic:hover{
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.learn{
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: hsl(47, 88%, 63%);
+  font-weight: bold;
+  font-family: 'Figtree';
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.learn:hover{
+  transform: scale(1.03);
+}
+
+.public-date{
+  margin-top: 0;
+  font-family: 'Figtree';
+  font-size: 13px;
+  font-weight: 500;
+}
+.topic{
+  margin-top: 0;
+  font-family: 'Figtree';
+  font-weight: bolder;
+}
+
+.details{
+  font-size: 17px;
+  font-family: 'Figtree';
+  color: hsl(0, 0%, 50%);
+}
+
+.author{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  top: -15px;
+}
+
+.avatar-img{
+  transition: transform 0.2s ease-in-out;
+}
+
+.avatar-img:hover{
+  transform: scale(1.1);
+}
+
+.avatar-name{
+  font-weight: bold;
+  font-family: 'Figtree';
+  font-weight: 2000;
+}
+
+.footer{
+  position: fixed;       
+  bottom: 0;               
+  right: 0;              
+  padding: 10px 20px;     
+  font-size: 14px;         
+  font-weight: 200;
+  color: hsl(0, 0%, 20%);        
+}
+
