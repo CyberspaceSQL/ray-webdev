@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Segoe UI;
+}
+
+body{
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#7d2ae8;
+    padding: 30px;
+}
+
+.container{
+    background-color: white;
+    max-width: 850px;
+    width: 100%;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    position: relative;   
+    perspective: 2700px;
+}
+
+.container .cover{
+   position: absolute;
+   height: 100%;
+   width: 50%;
+   top: 0;
+   left: 50%;
+   z-index: 1;
+   transition: all 1s ease;
+   transform-origin: left;
+   transform-style: preserve-3d;
+}
+.container .cover::before{
+   position: absolute;
+   content: '';
+   height: 100%;
+   width: 100%;
+   background-color: #7d2ae8;
+   
+}
+.container #flip:checked ~ .cover{
+   transform: rotateY(-180deg);
+}
+
+.container .form{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+   
+}
+
+.container .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.form-container .login-form,
+.form-container .signup-form{
+    width: calc(100% / 2 -25px);
+}
+
+form .form-container .title{
+    font-size: 24px;
+    font-weight:500;
+    position: relative;
+    color: #333;
+}
+ form .form-container .input-boxes{
+    margin-top: 30px;
+ }
+
+ form .form-container .title:before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background-color: #7d2ae8;
+ }
+
+ form .form-container .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+ }
+ .form-container .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+ }
+
+ .form-container .input-box :focus{
+    border-bottom: 2px solid #7d2ae8;
+ }
+
+ .form-container .button input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background-color: #7d2ae8;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    
+ }
+ 
+
+ .form-container .button input:focus{
+    opacity: 60%;
+ }
+
+ .form-container .input-box i{
+   position: absolute;
+   font-size: 17px;
+   color: #7d2ae8;
+ }
+
+ form .form-container label{
+   color: #7d2ae8;
+ }
+
+ form .form-container label:hover{
+    text-decoration:underline;
+}
+
+form .form-container .text a{
+   text-decoration: none;
+}
+
+form .form-container .text a:hover{
+   text-decoration: underline;
+}
+
+form .form-container .text{
+   text-align: center;
+   margin-top: 20px;
+}
+ 
