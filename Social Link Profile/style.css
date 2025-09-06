@@ -1,0 +1,103 @@
+body{
+  background-color: hsl(0, 0%, 8%);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  font-family: "Inter";
+}
+
+
+.profile-card{
+  background-color:  hsl(0, 0%, 12%);
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.avatar:hover{
+  transform: scale(1.09);
+}
+.socials{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  background-color: hsl(0, 0%, 20%);
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.4s ease-in-out;
+  color: white;
+  font-weight: bold;
+  width: 300px;
+  cursor: pointer;
+  text-align: center;
+}
+
+li:hover{
+  transform: scale(1.05);
+}
+
+.git:hover{
+  background-color: black;
+  box-shadow: 0 4px 10px rgba(24, 23, 23, 0.4);
+}
+
+.frontend:hover{
+  background-color: hsl(75, 94%, 57%);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.linkedIn:hover{
+  background-color: #0A66C2;
+  box-shadow: 0 4px 10px rgba(10, 102, 194, 0.4);
+}
+
+.X:hover{
+  background-color: #1DA1F2;
+  box-shadow: 0 4px 10px rgba(29, 161, 242, 0.4);
+}
+
+.ig:hover{
+  background: linear-gradient(45deg, #FCAF45, #FD1D1D, #833AB4);
+  box-shadow: 0 4px 10px rgba(131, 58, 180, 0.4);
+}
+
+
+.details{
+  color: white;
+}
+
+h2{
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+h4{
+  color: hsl(75, 94%, 57%);
+  text-align: center;
+}
+
+footer{
+  position: fixed;
+  color: hsl(0, 0%, 60%);
+  bottom: 0;
+}
